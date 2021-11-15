@@ -1,0 +1,58 @@
+.color_picker_container {
+  width: 100%;
+  height: auto;
+}
+.preview {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.row {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px;
+  display: inline-flex;
+  border-radius: 5px;
+}
+.col {
+  width: 100%;
+  padding: 10px;
+}
+.col h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.col h3 {
+  font-size: 18px;
+  margin: 15px 0;
+  font-weight: 400;
+}
+.col ul {
+  width: 100%;
+}
+.col ul li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type='color'] {
+  -webkit-appearance: none;
+  border: 0px;
+  width: 40px;
+  height: 40px;
+  float: left;
+  cursor: pointer;
+}
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+  border: none;
+}

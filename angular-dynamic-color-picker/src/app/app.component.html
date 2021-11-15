@@ -1,0 +1,27 @@
+<div class="color_picker_container">
+  <div class="row">
+    <div class="col">
+      <h1>Preview</h1>
+      <div
+        class="preview"
+        (mouseover)="mouseHover()"
+        (mouseout)="mouseOut()"
+        [ngStyle]="{
+          'background-color': mouseOnHover === true ? hoverbg : pick_color
+        }"
+      ></div>
+    </div>
+    <div class="col">
+      <h3>Select Background</h3>
+      <ul>
+        <li
+          *ngFor="let color of color_list"
+          [ngStyle]="{ 'background-color': color.color }"
+          (click)="selectColor(color.color)"
+        ></li>
+      </ul>
+      <h3>Select Hover Color</h3>
+      <input type="color" [(ngModel)]="hoverbg" />
+    </div>
+  </div>
+</div>
